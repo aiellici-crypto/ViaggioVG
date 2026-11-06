@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Viaggio al Centro della Terra</title>
+<meta name="description" content="Avventura testuale ispirata al romanzo di Jules Verne, nello stile dei classici giochi a parser degli anni '80.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="screen">
+  <header id="top">
+    <pre id="art" aria-hidden="true"></pre>
+    <div id="status">
+      <span id="st-place">—</span>
+      <span id="st-date"></span>
+      <span id="st-score"></span>
+    </div>
+  </header>
+  <main id="out" aria-live="polite"></main>
+  <form id="cmd" autocomplete="off">
+    <span class="prompt">&gt;</span>
+    <input id="in" type="text" spellcheck="false" autocapitalize="off" aria-label="Comando" placeholder="scrivi un comando…">
+  </form>
+  <nav id="pad" aria-label="Comandi rapidi">
+    <button data-c="guarda">Guarda</button>
+    <button data-c="inventario">Inv.</button>
+    <button data-c="n">N</button>
+    <button data-c="s">S</button>
+    <button data-c="e">E</button>
+    <button data-c="o">O</button>
+    <button data-c="su">Su</button>
+    <button data-c="giù">Giù</button>
+    <button data-c="aspetta">Aspetta</button>
+    <button data-c="suggerimento">Indizio</button>
+    <button data-c="aiuto">Aiuto</button>
+  </nav>
+</div>
+<script src="game.js"></script>
+</body>
+</html>
